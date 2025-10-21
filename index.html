@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooksmith - AI UGC Script Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Turn your idea into 
+                    <span class="typing-text">viral UGC scripts</span>
+                    in 2 minutes
+                </h1>
+                <p class="hero-subtitle">
+                    The most expensive part of UGC ads isn't creators — it's writing the scripts. 
+                    Hooksmith turns your brief into production-ready ads with real viral hooks, 
+                    shot lists, and delivery notes.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="openWaitlistModal()">
+                        Generate my first script
+                    </button>
+                    <button class="btn-secondary" onclick="openSampleModal()">
+                        See example script
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">hours saved per brief</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50</span>
+                        <span class="stat-label">creators this month</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2min</span>
+                        <span class="stat-label">average generation time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-bubble"></div>
+                <div class="script-preview">
+                    <div class="script-header">
+                        <div class="script-dot red"></div>
+                        <div class="script-dot yellow"></div>
+                        <div class="script-dot green"></div>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-line typing-line">"POV: You found the serum that actually works..."</div>
+                        <div class="script-line">[Close-up: Apply serum to face]</div>
+                        <div class="script-line">"This changed my skin in 2 weeks"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How it works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Upload your brief</h3>
+                    <p>Share your product details, target audience, and any specific requirements</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>AI generates your script</h3>
+                    <p>Our AI creates viral hooks, detailed shot lists, and delivery notes in minutes</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Download & shoot</h3>
+                    <p>Get your production-ready script with everything you need to start filming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes It Different -->
+    <section class="differentiators">
+        <div class="container">
+            <h2 class="section-title">What makes Hooksmith different</h2>
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <div class="diff-icon">🎯</div>
+                    <h3>Not ChatGPT generic</h3>
+                    <p>Real viral TikTok hooks based on actual trending content, not generic AI fluff</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon">📋</div>
+                    <h3>Production-ready details</h3>
+                    <p>Complete shot lists, camera angles, and delivery notes so you can start filming immediately</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon">🌟</div>
+                    <h3>Multiple niches</h3>
+                    <p>Works for beauty, fashion, wellness, and more. We understand what makes each niche tick</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof & Curiosity -->
+    <section class="proof">
+        <div class="container">
+            <h2 class="section-title">Real results from real creators</h2>
+            <div class="proof-content">
+                <div class="testimonial">
+                    <div class="quote">
+                        "I used to spend 4+ hours writing scripts. Hooksmith cut that to 30 minutes. 
+                        My engagement rates are up 40% since using their viral hooks."
+                    </div>
+                    <div class="author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Chen</div>
+                            <div class="author-title">Beauty UGC Creator</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">3.2x</div>
+                        <div class="stat-label">faster script creation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">higher engagement</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">scripts generated</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fomo-banner">
+                <p>🔥 We're onboarding 50 creators this month. Join the waitlist to secure your spot.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to create viral UGC scripts?</h2>
+            <p>Join early access and start generating production-ready scripts in minutes</p>
+            <button class="btn-primary large" onclick="openWaitlistModal()">
+                Join the waitlist
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Hooksmith</h3>
+                    <p>Where viral UGC ideas start</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="https://twitter.com/hooksmith" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Waitlist Modal -->
+    <div id="waitlistModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeWaitlistModal()">&times;</span>
+            <h2>Join the waitlist</h2>
+            <p>Be among the first to experience Hooksmith's AI-powered UGC script generation</p>
+            <form id="waitlistForm" onsubmit="submitWaitlist(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-primary">Join waitlist</button>
+            </form>
+            <p class="modal-note">We'll notify you when Hooksmith is ready. No spam, ever.</p>
+        </div>
+    </div>
+
+    <!-- Sample Script Modal -->
+    <div id="sampleModal" class="modal">
+        <div class="modal-content large">
+            <span class="close" onclick="closeSampleModal()">&times;</span>
+            <h2>Sample UGC Script</h2>
+            <p class="modal-subtitle">Bubble Serum - Beauty Product</p>
+            <div class="sample-script">
+                <div class="script-section">
+                    <h3>🎯 Hook (0-3 seconds)</h3>
+                    <p>"POV: You found the serum that actually works..."</p>
+                </div>
+                <div class="script-section">
+                    <h3>📋 Shot List</h3>
+                    <ul>
+                        <li>Close-up: Apply serum to face (2 seconds)</li>
+                        <li>Wide shot: Before/after skin comparison (3 seconds)</li>
+                        <li>Medium shot: You talking to camera (5 seconds)</li>
+                        <li>Close-up: Serum bottle with brand name visible (2 seconds)</li>
+                    </ul>
+                </div>
+                <div class="script-section">
+                    <h3>💬 Delivery Notes</h3>
+                    <ul>
+                        <li>Start with genuine surprise/excitement</li>
+                        <li>Emphasize "actually works" with emphasis</li>
+                        <li>Show confidence when applying product</li>
+                        <li>End with call-to-action: "Link in bio"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
